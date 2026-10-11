@@ -5,7 +5,7 @@ def file_check(file_path):
         with open(file_path, "r"):
             return True
     except FileNotFoundError:
-        print("dalbajob ieliec istu failu")
+        print("File not found. Please enter a valid CSV file path.")
         return False
 
 def duplicate(file_path):
@@ -139,7 +139,7 @@ def main():
                 elif command == "exit":
                     return
                 else:
-                    print("nu tu lohs")
+                    print("Unknown command. Please try again.")
 
 main()
 
